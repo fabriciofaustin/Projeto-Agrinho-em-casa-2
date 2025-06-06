@@ -1,0 +1,22 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const aumentaFonteBotao = document.getElementById('aumentar-fonte');
+    const diminuiFonteBotao = document.getElementById('diminuir-fonte');
+
+    let tamanhoAtualFonte = 1;
+
+    aumentaFonteBotao.addEventListener('click', function() {
+        tamanhoAtualFonte += 0.1;
+        document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
+    });
+
+    diminuiFonteBotao.addEventListener('click', function() {
+        tamanhoAtualFonte -= 0.1;
+        document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
+    });
+});
+
+document.querySelector("form").addEventListener("submit", function (e) {
+  // Aqui você pode validar o reCAPTCHA, enviar os dados com fetch/ajax, etc.
+  alert("Formulário enviado!");
+  e.preventDefault(); // Remova essa linha quando integrar ao backend.
+});
