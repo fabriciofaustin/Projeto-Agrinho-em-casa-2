@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.querySelector("form").addEventListener("submit", function (e) {
-  // Aqui você pode validar o reCAPTCHA, enviar os dados com fetch/ajax, etc.
+  
   alert("Formulário enviado!");
-  e.preventDefault(); // Remova essa linha quando integrar ao backend.
+  e.preventDefault(); 
 });
